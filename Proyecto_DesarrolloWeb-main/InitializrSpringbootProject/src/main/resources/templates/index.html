@@ -4,11 +4,43 @@
     <head th:replace="~{layout/plantilla :: head}">
         <title>ecovintage</title>        
     </head>
-    <body>
-        <h1>¡Bienvenido a mi aplicación!</h1>
-        
+    <body class="bg-black">
         <header th:replace="~{layout/plantilla :: header}"/>
-        
+        <div class="container py-5">
+
+            <h1 class="text-center display-3 mb-5 fw-bold text-white">TENDENCIAS</h1>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="ratio ratio-1x1">
+                        <img th:src="@{trend1.png}" alt="Tendencia 1" class="rounded shadow object-fit-cover">
+                    </div>
+                    <p class="text-center mt-2 fw-bold">Producto 1</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="ratio ratio-1x1">
+                        <img th:src="@{trend2.png}" alt="Tendencia 2" class="rounded shadow object-fit-cover">
+                    </div>
+                    <p class="text-center mt-2 fw-bold">Producto 2</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="ratio ratio-1x1">
+                        <img th:src="@{trend3.png}" alt="Tendencia 3" class="rounded shadow object-fit-cover">
+                    </div>
+                    <p class="text-center mt-2 fw-bold">Producto 3</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="ratio ratio-1x1">
+                        <img th:src="@{trend4.png}" alt="Tendencia 4" class="rounded shadow object-fit-cover">
+                    </div>
+                    <p class="text-center mt-2 fw-bold">Producto 4</p>
+                </div>
+            </div>
+        </div>
         <footer th:replace="~{layout/plantilla :: footer}"/>          
     </body>
 </html>
